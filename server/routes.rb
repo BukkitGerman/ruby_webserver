@@ -5,6 +5,10 @@ module AppRoutes
 			get "/" do
 				erb :index
 			end
+			get "/test" do
+				title "test"
+				erb :index
+			end
 		end
 	end
 end

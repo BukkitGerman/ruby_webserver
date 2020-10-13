@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    multi_json (1.15.0)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     rack (2.2.3)
@@ -12,6 +13,16 @@ GEM
       rack (~> 2.2)
       rack-protection (= 2.1.0)
       tilt (~> 2.0)
+    sinatra-contrib (2.1.0)
+      multi_json
+      mustermann (~> 1.0)
+      rack-protection (= 2.1.0)
+      sinatra (= 2.1.0)
+      tilt (~> 2.0)
+    sinatra-flash (0.3.0)
+      sinatra (>= 1.0.0)
+    sinatra-static-assets (1.0.4)
+      sinatra (>= 1.1.0)
     sqlite3 (1.4.2)
     tilt (2.0.10)
 
@@ -21,6 +32,9 @@ PLATFORMS
 DEPENDENCIES
   rack
   sinatra
+  sinatra-contrib
+  sinatra-flash
+  sinatra-static-assets
   sqlite3
 
 BUNDLED WITH
